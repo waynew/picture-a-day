@@ -71,8 +71,9 @@ def run():
     ]
     subprocess.check_call(command)
 
-    for image in images:
-        shutil.copy(image, img_dir)
+    if config['pad'].getboolean('copy_images'):
+        for image in images:
+            shutil.copy(image, img_dir)
 
     generate_html()
 
