@@ -1,0 +1,4 @@
+*.pyc
+*.sw[a-p]
+content/
+pad.ini
