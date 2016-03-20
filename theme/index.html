@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          body {
+            background-color: #eee;
+          }
+
+          div.header {
+            border-bottom: thin black solid;
+            margin-bottom: 1em;
+          }
+
+          #head_logo {
+            font-family: 'Libre Baskerville', sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+          }
+
+          #content {
+            width: 175px*3;
+            margin-left: 100%-400px;
+            margin: auto;
+            text-align: center;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Picture A Day</h1>
+        </div>
+        <div id="content">
+        {{ content }}
+        </div>
+    </body>
+</html>
